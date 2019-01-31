@@ -13,5 +13,5 @@
     <script>
         window.baseUrl = '<%= ResolveUrl ("~") %>';
     </script>
-    <script src="React/dist/reactWebForm1.bundle.js" type="text/javascript"></script>
+    <script src="React/dist/parts.bundle.js" type="text/javascript"></script>
 </asp:Content>

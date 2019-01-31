@@ -3,8 +3,8 @@ const webpack = require("webpack");
 
 module.exports = {
     entry: {
-        reactWebForm1: "./src/parts/index.js",
-        reactWebForm2: "./src/products/index.js"
+        parts: "./src/parts/index.js",
+        products: "./src/products/index.js"
     },
     module: {
         rules: [
