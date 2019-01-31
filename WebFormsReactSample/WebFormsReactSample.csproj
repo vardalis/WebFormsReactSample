@@ -147,6 +147,7 @@
     <Content Include="React\.babelrc" />
     <Content Include="React\.browserslistrc" />
     <Content Include="React\package-lock.json" />
+    <Content Include="React\.gitignore" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="ProductsWebForm.aspx" />
     <Content Include="PartsWebForm.aspx" />
