@@ -10,7 +10,9 @@ class Products extends Component {
         this.state = {
             products: []
         };
+    }
 
+    componentDidMount() {
         this.retrieveData();
     }
 
