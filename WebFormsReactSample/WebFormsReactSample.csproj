@@ -147,6 +147,9 @@
     <Content Include="React\.babelrc" />
     <Content Include="React\package-lock.json" />
     <Content Include="React\.gitignore" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="ProductsWebForm.aspx" />
     <Content Include="PartsWebForm.aspx" />
@@ -191,6 +194,9 @@
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="Site.Mobile.Master" />
+    <Content Include="WebFormReactSample.wpp.targets">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />

@@ -37,6 +37,11 @@ module.exports = {
         publicPath: "React/dist/",
         filename: "[name].bundle.js"
     },
+    //optimization: {
+    //    splitChunks: {
+    //        chunks: 'all'
+    //        }
+    //},
     devServer: {
         contentBase: path.join(__dirname, "../"),
         port: 3000,
