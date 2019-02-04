@@ -10,7 +10,9 @@ class Parts extends Component {
         this.state = {
             parts: []
         };
+    }
 
+    componentDidMount() {
         this.retrieveData();
     }
 
@@ -41,7 +43,7 @@ class Parts extends Component {
             <div>
                 <h1>Parts:</h1>
                 <ul>
-                    {this.state.parts.map(part => <li><ItemInfo item={part} /></li>)}
+                    {this.state.parts.map(part => <li key={part.Id}><ItemInfo item={part} /></li>)}
                 </ul>
             </div >
         );

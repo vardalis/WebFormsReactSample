@@ -153,6 +153,7 @@
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="ProductsWebForm.aspx" />
     <Content Include="PartsWebForm.aspx" />
+    <Content Include="React\public\index.html" />
     <Content Include="React\src\components\itemInfo.js" />
     <Content Include="React\src\products\index.js" />
     <Content Include="React\src\products\products.js" />
@@ -270,7 +271,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="React\dist\" />
-    <Folder Include="React\public\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -314,6 +314,15 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
   </Target>
+  <PropertyGroup>
+    <PreBuildEvent>cd "$(ProjectDir)React"
+if $(ConfigurationName) == Debug (
+  call npm run build-dev
+)
+if $(ConfigurationName) == Release (
+  call npm run build-prod
+)</PreBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

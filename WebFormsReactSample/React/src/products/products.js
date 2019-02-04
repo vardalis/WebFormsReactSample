@@ -41,7 +41,7 @@ class Products extends Component {
             <div>
                 <h1>Products:</h1>
                 <ul>
-                    {this.state.products.map(product => <li><ItemInfo item={product} /></li>)}
+                    {this.state.products.map(product => <li key={product.Id}><ItemInfo item={product} /></li>)}
                 </ul>
             </div >
         );
