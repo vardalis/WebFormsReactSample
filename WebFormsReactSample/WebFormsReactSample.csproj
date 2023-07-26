@@ -316,6 +316,9 @@
   </Target>
   <PropertyGroup>
     <PreBuildEvent>cd "$(ProjectDir)React"
+
+set NODE_OPTIONS=--openssl-legacy-provider
+
 if $(ConfigurationName) == Debug (
   call npm run build-dev
 )
